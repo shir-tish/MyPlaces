@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.main.MainFragment">
+
+    <ImageView
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/hello_tv"
+        android:layout_alignBottom="@id/hello_tv"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_logout"
+        android:layout_marginHorizontal="20dp"/>
+
+    <TextView
+        android:id="@+id/hello_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/exo2"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/hippie_blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hello_tv"
+        android:layout_above="@id/bottom_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="4dp"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey4"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fab_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:elevation="0dp"
+            android:src="@drawable/ic_plus"
+            app:tint="@color/grey4"
+            app:backgroundTint="@color/hippie_blue"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/list_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_list"
+        app:tint="@color/hippie_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/fab_cv"
+        android:layout_alignTop="@id/bottom_layout"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/map_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_map"
+        app:tint="@color/grey3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/fab_cv"
+        android:layout_alignTop="@id/bottom_layout"
+        android:padding="10dp"
+        android:layout_marginBottom="5dp"/>
+
+
+</RelativeLayout>

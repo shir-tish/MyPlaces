@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyPlaces" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/hippie_blue</item>
+        <item name="colorPrimaryVariant">@color/glacier</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/valencia</item>
+        <item name="colorSecondaryVariant">@color/sunglo</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeColor">@color/hippie_blue</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:textColorHint">@color/grey2</item>
+
+    </style>
+
+    <style name="MyEditTextBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="boxStrokeColor">@color/glacier</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">@color/grey5</item>
+        <item name="startIconTint">@color/hippie_blue</item>
+    </style>
+
+
+    <style name="MyBtn">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:fontFamily">@font/exo2</item>
+    </style>
+
+    <style name="TimePicker" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:fontFamily">@font/exo2</item>
+        <item name="android:colorAccent">@color/hippie_blue</item>
+        <item name="android:textColor">@color/hippie_blue</item>
+        <item name="android:direction">left_to_right</item>
+    </style>
+
+</resources>

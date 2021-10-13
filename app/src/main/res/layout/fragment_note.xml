@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.main.NoteFragment">
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_back"
+        app:tint="@color/grey1"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/heart_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_heart_off"
+        app:tint="@color/grey1"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/delete_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@id/heart_btn"
+        android:src="@drawable/ic_delete"
+        android:layout_marginTop="20dp"
+        app:tint="@color/valencia"/>
+
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/image_cv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/grey4"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:scaleType="centerCrop"/>
+
+                        <ImageView
+                            android:id="@+id/image_icon"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_image"
+                            app:tint="@color/grey5" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/more_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/image_layout"
+                android:layout_alignBottom="@id/image_layout"
+                app:elevation="1dp"
+                app:backgroundTint="@color/hippie_blue"
+                app:fabCustomSize="40dp"
+                android:translationZ="3dp"
+                android:src="@drawable/ic_more"
+                app:tint="@color/grey5"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:visibility="gone"
+                android:id="@+id/camera_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/more_fab"
+                android:layout_alignBottom="@id/more_fab"
+                android:layout_marginStart="-5dp"
+                app:elevation="1dp"
+                app:backgroundTint="@color/grey5"
+                app:fabCustomSize="36dp"
+                app:maxImageSize="16dp"
+                android:translationZ="3dp"
+                android:src="@drawable/ic_camera"
+                app:tint="@color/hippie_blue"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:visibility="gone"
+                android:id="@+id/gallery_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/camera_fab"
+                android:layout_alignBottom="@id/camera_fab"
+                android:layout_marginStart="-5dp"
+                app:elevation="1dp"
+                app:backgroundTint="@color/grey5"
+                app:fabCustomSize="36dp"
+                app:maxImageSize="16dp"
+                android:translationZ="3dp"
+                android:src="@drawable/ic_image"
+                app:tint="@color/hippie_blue"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:visibility="gone"
+                android:id="@+id/delete_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/gallery_fab"
+                android:layout_alignBottom="@id/gallery_fab"
+                android:layout_marginStart="-5dp"
+                app:elevation="1dp"
+                app:backgroundTint="@color/grey5"
+                app:fabCustomSize="36dp"
+                app:maxImageSize="16dp"
+                android:translationZ="3dp"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/valencia"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/title_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:gravity="center"
+            android:hint="@string/title"
+            android:textColor="@color/hippie_blue"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/grey3"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/exo2"
+            android:inputType="text"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/date_box"
+                style="@style/MyEditTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/ic_calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/choose_date"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/exo2"
+                    android:inputType="date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/date_change_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:translationZ="4dp"
+                android:layout_alignBottom="@id/date_box"
+                android:layout_alignTop="@id/date_box"
+                android:gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:text="change"
+                android:textSize="16sp"
+                android:fontFamily="@font/exo2"
+                android:textColor="@color/hippie_blue"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyEditTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|start"
+                android:hint="@string/description"
+                android:minLines="2"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textSize="20sp"
+                android:fontFamily="@font/exo2"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp">
+
+        <android.widget.Button
+            android:id="@+id/save_btn"
+            style="@style/MyBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/light_positive_btn"
+            android:paddingVertical="15dp"
+            android:text="@string/save"
+            android:textColor="@color/grey5" />
+
+        <android.widget.Button
+            android:id="@+id/cancel_btn"
+            style="@style/MyBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:background="@drawable/light_negative_btn"
+            android:textColor="@color/hippie_blue"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">MyPlaces</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Note\'s title</string>
+    <string name="choose_date">Choose date</string>
+    <string name="description">description</string>
+    <string name="toast_error_permission_location">Please allow to access this device\'s location</string>
+    <string name="set_date">Set a date</string>
+    <string name="exit_edit_notes_title">Exit</string>
+    <string name="exit_edit_notes_message">Are you sure that you want to exit? This action will cancel all the changes that you have made.</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="change">change</string>
+    <string name="toast_error_title">The title can not be empty</string>
+    <string name="from_you">km from you</string>
+    <string name="date">Date:</string>
+    <string name="location">Location:</string>
+    <string name="toast_error_permission_storage">Please allow to access photos and media on your device</string>
+    <string name="no_notes">There are no notes yet</string>
+    <string name="your_location">Your location</string>
+    <string name="sign_up_title">Sign Up</string>
+    <string name="your_name">Your name</string>
+    <string name="your_email">Your email</string>
+    <string name="your_password">Your password</string>
+    <string name="remember_me">remember me</string>
+    <string name="login">login</string>
+    <string name="have_user">Already have a user?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_title">Sign In</string>
+    <string name="no_user">I do not have a user</string>
+    <string name="sign_up">Sign up</string>
+    <string name="welcome_to" translatable="false">Welcome to</string>
+    <string name="my_places" translatable="false">My Places</string>
+    <string name="delete_note_title">"Delete "</string>
+    <string name="delete_note_message">"Are you sure that you want to delete "</string>
+    <string name="toast_error_username_empty">Username can not be empty</string>
+    <string name="toast_error_email_empty">Email can not be empty</string>
+    <string name="toast_error_email_invalid">Email is invalid</string>
+    <string name="toast_error_password_empty">Password can not be empty</string>
+    <string name="toast_error_password_short">Password needs to be at least 6 chars long</string>
+    <string name="toast_error_email_exists">An account with this email already exists</string>
+    <string name="toast_error_password_incorrect">Password incorrect</string>
+    <string name="toast_error_creating_user">Error creating new user</string>
+    <string name="hello">"Hello "</string>
+    <string name="toast_error_user_not_exists">User does not exist</string>
+    <string name="quots" translatable="false">\"</string>
+    <string name="toast_permissions">Storage and Location Services Permission required for this app</string>
+    <string name="toast_permissions_settings">Go to settings and enable permissions</string>
+    <string name="ok">OK</string>
+</resources>

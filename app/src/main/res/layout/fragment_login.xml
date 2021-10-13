@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.login.loginFragment"
+    android:background="@drawable/background_color"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/ic_location_pin"
+        app:tint="@color/valencia"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to"
+        android:fontFamily="@font/exo2"
+        android:textSize="30sp"
+        android:textColor="@color/akaroa"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_places"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/exo2"
+        android:textSize="48sp"
+        android:textColor="@color/grey5"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.widget.Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_positive_btn"
+            android:layout_margin="10dp"
+            android:text="@string/sign_up_title"
+            android:fontFamily="@font/exo2"
+            android:textStyle="bold"
+            android:textColor="@color/hippie_blue"
+            android:textSize="24sp"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="15dp"/>
+
+
+        <android.widget.Button
+            android:id="@+id/sign_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_negative_btn"
+            android:layout_margin="10dp"
+            android:text="@string/sign_in_title"
+            android:fontFamily="@font/exo2"
+            android:textStyle="bold"
+            android:textColor="@color/grey5"
+            android:textSize="24sp"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="15dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
